@@ -7,7 +7,7 @@ namespace MPP.Back.API.Controllers.v1
 {
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/productos")]
-    //[Authorize]
+    [Authorize]
     public class ProductoController : BaseApiController
     {
         private readonly IProductoService _productoService;
